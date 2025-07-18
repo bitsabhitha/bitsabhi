@@ -1,139 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abitha Dadaboina| Web Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <nav>
-      <h1 class="logo">MyPortfolio</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Abitha Dadaboina</h1>
+    <p class="title">Web Developer</p>
   </header>
 
-  <section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Hi, I'm Abitha Dadaboina, a passionate developer.</p>
+  <section class="contact">
+    <h2>Contact Info</h2>
+    <p>📧 Email: <a href="mailto:dadaboinaabhitha@gmail.com">dadaboinaabhitha@gmail.com</a></p>
+    <p>📞 Phone:9014734374</p>
+    <p>📍 Location: Warangal, Telangana</p>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a developer who enjoys building web apps and solving problems.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of Project 1.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of Project 2.</p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
+  <section class="education">
+    <h2>Education</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-<li>gitHub</li>
+      <li><strong>B.Tech (CSE)</strong> - Balaji Institute of Technology and Science</li>
+      <li><strong>Intermediate</strong> - Ramappa junior college</li>
+      <li><strong>SSC</strong> -Vishwashanthi High School</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Abitha Dadaboina" required />
-      <input type="email" placeholder="dadaboinaabhitha@gmail.com" required />
-      <textarea placeholder="Rampet(kazipet" required></textarea>
-    </form>
+  <section class="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Cybersecurity Essentials - Cisco Networking Academy (2024)</li>
+      <li>Introduction to Cybersecurity - Cisco Networking Academy (2025)</li>
+      <li>Python Essentials 1 - Cisco Networking Academy (2025)</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Technical Skills</h2>
+    <p>HTML, CSS</p>
   </section>
 
   <footer>
-    <p>© 2025 Abitha dadaboina</p>
+    <p>&copy; 2025 Abitha Dadaboina. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-* {
+
+body {
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
+
 header {
-  background: #222;
+  background-color: #008080;
   color: white;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-}
-nav ul li {
-  margin: 0 1rem;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-}
-section {
   padding: 2rem;
-}
-#home {
-  background: #f4f4f4;
   text-align: center;
-  padding: 5rem 2rem;
 }
-.project {
-  background: #eaeaea;
-  padding: 1rem;
-  margin: 1rem 0;
+
+header .title {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
-form input, form textarea {
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
-  margin: 1rem 0;
+
+section {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-button {
-  background: #333;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  cursor: pointer;
+
+h2 {
+  color: #008080;
 }
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
 footer {
   text-align: center;
-  background: #222;
-  color: white;
   padding: 1rem;
+  background: #008080;
+  color: white;
   margin-top: 2rem;
 }
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Thank you for reaching out!");
-});
+
+console.log("Portfolio Loaded Successfully!");
+
+
+
